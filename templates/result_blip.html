@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blip Image Captioning Result</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+
+<body>
+    <h1>Blip Image Captioning Result</h1>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image" style="max-width: 80%;"><br>
+    <p><strong>Generated Caption (Blip):</strong> {{ caption }}</p>
+    <a href="/">Upload Another Image</a>
+</body>
+
+</html>
+

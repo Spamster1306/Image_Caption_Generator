@@ -1,0 +1,18 @@
+/* styles.css */
+body {
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+/* Customize your styles further as needed */

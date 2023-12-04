@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Image Captioning</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
 </head>
+
 <body>
     <h1>Image Captioning</h1>
-    <p>Upload an image to generate a caption:</p>
+    <p>Upload an image and choose a method to generate a caption:</p>
     <form method="POST" action="/" enctype="multipart/form-data">
         <input type="file" name="file">
-        <input type="submit" value="Upload and Generate Caption">
-    </form>
+        <br>
+        <input type="text" name="reference_caption" placeholder="Enter reference caption">
+        <br>
+        <input type="radio" name="caption_method" value="vit"> Predict Caption using ViT
+        <br>
+        <input type="radio" name="caption_method" value="blip"> Predict Caption using Blip
+        <br>
+        <input type="submit" name="action" value="Generate Caption">
+        <input type="submit" name="action" value="Evaluate">
 </body>
+
 </html>
+
